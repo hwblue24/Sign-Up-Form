@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'monotonregular';
+    src: url('Fonts/monoton-regular-webfont.woff2') format('woff2'),
+         url('Fonts/monoton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body { 
+    height:100vh;
+}
+
+.container { 
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content:center;
+}
+
+.leftpanel, .rightpanel {
+
+    width:40vw;
+    height:100vh;
+    position:relative;
+}
+
+.muddy_pic {
+    height:auto;
+    max-width:100%;
+    
+}
+
+
+.hw { 
+    position:absolute;
+    top:0;
+    right:0;
+    font-family: 'monotonregular';
+    background-color: black;
+    color:purple;
+    writing-mode: vertical-rl;
+    text-orientation:upright;
+    font-size:3vw;
+   
+
+    
+}
+
+.photo-credit {
+    position:absolute;
+    left:0px;
+    top:0px;
+}
