@@ -16,6 +16,14 @@ body {
     width:100%;
     display: flex;
     justify-content:center;
+    
+}
+
+.rightpanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
 }
 
 .leftpanel, .rightpanel {
@@ -23,6 +31,17 @@ body {
     width:40vw;
     height:100vh;
     position:relative;
+    
+}
+
+.SignUpBanner {
+    font-family: 'monotonregular';
+    background-color: black;
+    color:rgb(238, 255, 0);
+    font-weight: 100;
+    font-size:3vw;
+    margin:0px;
+
 }
 
 .muddy_pic {
@@ -31,18 +50,16 @@ body {
     
 }
 
-
 .hw { 
     position:absolute;
     top:0;
     right:0;
-    font-family: 'monotonregular';
+    font-family:'monotonregular';
     background-color: black;
-    color:purple;
+    color:rgb(223, 4, 223);
     writing-mode: vertical-rl;
     text-orientation:upright;
     font-size:3vw;
-   
 
     
 }
@@ -52,3 +69,4 @@ body {
     left:0px;
     top:0px;
 }
+
