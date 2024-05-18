@@ -70,3 +70,26 @@ body {
     top:0px;
 }
 
+fieldset {
+    height:40vh;
+}
+
+ul {
+    height:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
+
+.user_info, .contact_info, .passinfo {
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+label, input {
+    display: flex;
+    flex-direction:column;
+}
+
