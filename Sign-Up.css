@@ -71,7 +71,11 @@ body {
 }
 
 fieldset {
-    height:40vh;
+    height:25vh;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    
 }
 
 ul {
@@ -79,17 +83,68 @@ ul {
     display:flex;
     flex-direction: column;
     justify-content:space-around;
+    
+
 
 }
 
 .user_info, .contact_info, .passinfo {
     display:flex;
-    justify-content: space-around;
+    justify-content:flex-start;
+    gap: 4vw;
     
 }
 
 label, input {
     display: flex;
     flex-direction:column;
+    border-radius: 5px;
+    
 }
+
+input:focus { 
+    border:solid 5px rgb(4, 154, 223);
+    border-radius: 5px;
+    outline:none;
+
+}
+
+input:invalid { 
+    border:solid 5px red;
+    border-radius: 5px; 
+
+}
+
+button { 
+    width:fit-content;
+    border:solid 5px rgb(4, 154, 223);
+    background-color: rgb(4, 154, 223);
+    border-radius: 5px;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: larger;
+    color:aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    left:3vw; 
+
+}
+
+.question { 
+    position:relative;
+    left: 3vw; 
+    font-size: medium;
+    bottom:40px;
+}
+
+span { 
+    color:rgb(223, 4, 223);
+}
+
+legend { 
+    font-size: 2em;
+}
+
+
 
