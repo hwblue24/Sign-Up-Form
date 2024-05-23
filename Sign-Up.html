@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up-Form-Guitar</title>
     <link rel="stylesheet" href="Sign-Up.css">
+    <script src="Sign-Up.js"></script>
     
 </head>
 <body>
@@ -27,33 +28,33 @@
                         <div class="user_info">
                             <div>
                                 <label for="First_Name">First Name</label>
-                                <input type="text" name="First_Name"   id="First_Name">
+                                <input type="text" name="First_Name"   id="First_Name" pattern="^[a-zA-Z]{1,10}$" maxlength="10" >
                             </div>
                             <div>
                                 <label for="Last_Name">Last Name</label>
-                                <input type="text" name="Last_Name" id="Last_Name">
+                                <input type="text" name="Last_Name" id="Last_Name" pattern="^[a-zA-Z]{1,10}$" maxlength="10">
                             </div>
                         </div>
 
                         <div class="contact_info">
                             <div>
                                 <label for="Email">Email</label>
-                                <input type="email" name="Email" id="Email">
+                                <input type="email" name="Email" id="Email" maxlength="15">
                             </div>
                             <div>
                                 <label for="Phone_Number">Phone Number</label>
-                                <input type="text" name="Phone_Number" id="Phone_Number">
+                                <input type="text" name="Phone_Number" id="Phone_Number" pattern="\d{10}" maxlength="10">
                             </div>
                         </div>
 
                         <div class="passinfo">
                             <div>
                                 <label for="Password">Password</label>
-                                <input type="password" name="Password" id="Password">
+                                <input type="password" name="Password" id="Password" minlength="3" maxlength="10" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[a-zA-Z\d@$!%*?&]+$">
                             </div>
                             <div>
                                 <label for="Confirm_Password">Confirm Password</label>
-                                <input type="password" name="Confirm_Password" id="Confirm_Password">
+                                <input type="password" name="Confirm_Password" id="Confirm_Password" minlength="3" maxlength="10" pattern="^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[a-zA-Z\d@$!%*?&]+$">
                             </div>
                         </div>
                     </ul>
